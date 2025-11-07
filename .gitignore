@@ -1,10 +1,9 @@
-# ===============================
-# 🐳 WordPress Docker Git Ignore
-# ===============================
-
-# Bỏ qua dữ liệu volumes (rất nặng)
-wordpress/
+# Bỏ qua MySQL data (rất nặng)
 mysql/
+
+# KHÔNG bỏ qua source code WordPress
+# Nếu bạn muốn giữ code WordPress, nhưng không muốn commit wp-content/uploads (ảnh)
+wordpress/wp-content/uploads/
 
 # Logs và file tạm
 *.log
