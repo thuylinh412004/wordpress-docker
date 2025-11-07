@@ -1,0 +1,29 @@
+# ===============================
+# 🐳 WordPress Docker Git Ignore
+# ===============================
+
+# Bỏ qua dữ liệu volumes (rất nặng)
+wordpress/
+mysql/
+
+# Logs và file tạm
+*.log
+*.tmp
+*.swp
+
+# Backup / dump
+*.sql
+*.sql.gz
+
+# Hệ thống (Windows / macOS)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / npm / composer cache (phòng khi dùng thêm)
+node_modules/
+vendor/
+
+# Env files (chứa password, secret)
+.env
+.env.*
